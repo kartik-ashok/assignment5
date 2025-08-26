@@ -29,9 +29,25 @@ class ProductCard extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(8),
-            child: ElevatedButton(
+            child: ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green, // button color
+                foregroundColor: Colors.white, // text & icon color
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 14,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20), // rounded corners
+                ),
+                elevation: 5, // shadow
+              ),
               onPressed: () => cartProvider.addToCart(product),
-              child: const Text("Add to Cart"),
+              icon: const Icon(Icons.add_shopping_cart),
+              label: const Text(
+                "Add to Cart",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
         ],
