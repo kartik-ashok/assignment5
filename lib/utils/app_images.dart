@@ -1,7 +1,7 @@
 class AppImages {
-  static const String phone = "assets/images/phone.png";
-  static const String headphones = "assets/images/headphones.png";
-  static const String shoes = "assets/images/shoes.png";
-  static const String bag = "assets/images/bag.png";
-  static const String watch = "assets/images/watch.png";
+  static const String phone = "assets/images/phone.jpg";
+  static const String headphones = "assets/images/headphone.jpg";
+  static const String shoes = "assets/images/shoe.jpg";
+  static const String bag = "assets/images/bag.jpg";
+  static const String watch = "assets/images/watch.jpg";
 }
